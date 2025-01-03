@@ -27,13 +27,13 @@ import { ThemeService } from '../../services/theme.service';
       <button
         type="button"
         mat-icon-button
-        class="m-1 p-0"
+        class="m-4 p-4"
         (click)="themeService.toggleColorTheme()"
         [matTooltip]="themeService.isCurrentThemeDark() ? 'Claro' : 'Escuro'">
         @if (themeService.isCurrentThemeDark()) {
-          <mat-icon class="font-icon text-amber-500">light_mode</mat-icon>
+          <mat-icon class="font-icon text-white-500">light_mode</mat-icon>
         } @else {
-          <mat-icon class="font-icon text-sky-500">dark_mode</mat-icon>
+          <mat-icon class="font-icon text-white-100">dark_mode</mat-icon>
         }
       </button>
     </div>

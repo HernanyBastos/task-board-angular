@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { CategoryComponent } from '../../features/categories/view/components/services/category/category.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { TaksComponent } from '../../features/task/view/taks/taks.component';
+import { CategoryComponent } from '../../features/category/view/category/category.component';
 
-const COMPONENTS = [CategoryComponent, TaksComponent];
+const COMPONENTS = [TaksComponent, CategoryComponent];
 
 const MODULES = [MatDividerModule];
 
@@ -11,16 +11,16 @@ const MODULES = [MatDividerModule];
   selector: 'app-main',
   standalone: true,
   imports: [...COMPONENTS, ...MODULES],
-  template: `<div class="h-screen flex w-full border-4 border-blue-700">
+  template: `<div class="h-screen flex w-full">
     <!--Cateogias -->
-    <app-category class="w-1/4 border-4 border-orange-600" />
+    <app-category class="w-1/4" />
 
     <!--Divisor -->
 
-    <mat-divider class="h-full opacity-50" />
+    <mat-divider class="h-full opacity-50" vertical />
 
     <!--Tarefas -->
-    <app-taks class="w-3/4 border-4 border-green-700" />
+    <app-taks class="w-3/4" />
   </div>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
