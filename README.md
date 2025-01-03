@@ -21,25 +21,6 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 ![Login](public/app_demo.gif 'Demo')
 
 
-## 🚀 Instalação
-
-Segue projeto no github pronto para usar de template e desenvolver o seu próprio: https://github.com/lucasspeixoto/my-task-board-template
-
-```bash
-# Clone o repositório
-$ git clone https://github.com/lucasspeixoto/my-task-board-template
-
-# Entre na pasta do projeto
-$ cd my-task-board-template
-
-# Instalação bibliotecas
-$ npm install
-
-# Iniciando projeto
-$ npm start
-
-```
-
 ## 📝 Licença
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https://opensource.org/licenses/MIT) para obter mais detalhes.
